@@ -14,6 +14,7 @@ const Requests = ({ token }) => {
 
   useEffect(() => {
     fetchRequests();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [refreshKey]);
 
   const fetchRequests = async () => {

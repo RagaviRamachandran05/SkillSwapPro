@@ -101,6 +101,7 @@ const Dashboard = ({ token }) => {
     checkNewMessages();
     const interval = setInterval(checkNewMessages, 10000);
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token, user?._id]);
 
   const logout = () => {
