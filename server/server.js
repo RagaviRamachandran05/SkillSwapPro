@@ -85,9 +85,11 @@ const auth = (req, res, next) => {
 const allowedOrigins = [
   "http://localhost:3000",
   "http://127.0.0.1:3000",
+  "https://skill-swap-pro-two.vercel.app",
+  "https://skillswap-ulpp.vercel.app",
   ...(process.env.FRONTEND_URL
     ? process.env.FRONTEND_URL.split(",").map((s) => s.trim())
-    : ["https://skillswap-ulpp.vercel.app"]),
+    : []),
 ];
 
 app.use(

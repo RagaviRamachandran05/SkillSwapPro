@@ -2,7 +2,7 @@ const envUrl = process.env.REACT_APP_API_URL;
 
 export const API_BASE = (envUrl && envUrl.trim()) 
   ? envUrl.trim().replace(/\/+$/, '') 
-  : 'http://localhost:5000';
+  : 'https://skillswappro.onrender.com';
 
 export const getWsUrl = () => {
   const base = API_BASE;
